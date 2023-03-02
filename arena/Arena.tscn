@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://shooter/Shooter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://arena/arena.gd" type="Script" id=2]
+[ext_resource path="res://enemy/Slime.tscn" type="PackedScene" id=3]
+
+[node name="BgColor" type="ColorRect"]
+margin_right = 511.0
+margin_bottom = 300.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+enemy_scene = ExtResource( 3 )
+
+[node name="Slime" parent="." instance=ExtResource( 3 )]
+
+[node name="Shooter" parent="." instance=ExtResource( 1 )]
+position = Vector2( 488, 292 )
+
+[node name="DebugText" type="RichTextLabel" parent="."]
+margin_left = 386.0
+margin_top = 176.0
+margin_right = 613.0
+margin_bottom = 216.0
+bbcode_enabled = true
+bbcode_text = "asdas"
+text = "asdas"
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
