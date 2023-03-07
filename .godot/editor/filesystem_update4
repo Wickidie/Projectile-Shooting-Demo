@@ -1,5 +1,4 @@
 res://default_env.tres
-res://shooter/Shooter.tscn
 res://arena/Arena.tscn
-res://bullet/bullet.gd
+res://shooter/Shooter.tscn
 res://bullet/Bullet.tscn
