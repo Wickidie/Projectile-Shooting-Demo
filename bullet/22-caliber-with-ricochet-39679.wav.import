@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/22-caliber-with-ricochet-39679.wav-6d1fa702dc307e49e8a5ba6f6bbc24b5.sample"
+type="AudioStreamWAV"
+uid="uid://dkd7oit0sd60d"
+path="res://.godot/imported/22-caliber-with-ricochet-39679.wav-6d1fa702dc307e49e8a5ba6f6bbc24b5.sample"
 
 [deps]
 
 source_file="res://bullet/22-caliber-with-ricochet-39679.wav"
-dest_files=[ "res://.import/22-caliber-with-ricochet-39679.wav-6d1fa702dc307e49e8a5ba6f6bbc24b5.sample" ]
+dest_files=["res://.godot/imported/22-caliber-with-ricochet-39679.wav-6d1fa702dc307e49e8a5ba6f6bbc24b5.sample"]
 
 [params]
 

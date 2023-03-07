@@ -7,8 +7,10 @@ func _ready():
 	
 func _physics_process(delta):
 	# look_at(Global.player_pos)
-	$SlimeKine/SlimeRay.cast_to = Global.player_pos - position
-	$SlimeKine.move_and_slide($SlimeKine/SlimeRay.cast_to.normalized() * 20, $SlimeKine/SlimeRay.cast_to)
+	$SlimeKine/SlimeRay.target_position = Global.player_pos - position
+	$SlimeKine.set_velocity($SlimeKine/SlimeRay.target_position.normalized() * 20)
+	$SlimeKine.move_and_slide()
+	$SlimeKine.velocity
 	
 	
 	pass

@@ -1,4 +1,4 @@
-extends RigidBody2D
+extends CharacterBody2D
 
 var direction = Vector2()
 var speed = 500.0
@@ -16,15 +16,6 @@ func fire(_direction):
 	direction = _direction
 	#print(direction)
 
-func _on_Timer_timeout():
+func _on_timer_timeout():
 	queue_free()
-	pass # Replace with function body.
-
-func _on_Bullet_body_entered(body):
-	print(body)
-	pass # Replace with function body.
-
-func _on_Bullet_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
-	
-	print(body)
 	pass # Replace with function body.

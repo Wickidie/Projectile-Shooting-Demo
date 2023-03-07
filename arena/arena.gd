@@ -1,21 +1,21 @@
 extends Control
 
-export(PackedScene) var enemy_scene
+@export var enemy_scene: PackedScene
 
 func _ready():
 	randomize()
 	for i in 10:
-		var slime = enemy_scene.instance()
+		var slime = enemy_scene.instantiate()
 		add_child(slime)
-		slime.position = Vector2(rand_range(0, 1024), rand_range(0, 600))
+		slime.position = Vector2(randf_range(0, 1024), randf_range(0, 600))
 		
 	pass
 
 func _process(delta):
-	$DebugText.bbcode_text = str(Global.player_pos)
+	$DebugText.text = str(Global.player_pos)
 	pass
 	
 func _physics_process(delta):
-	$RayCast2D.cast_to = Global.player_pos
+	$RayCast2D.target_position = Global.player_pos
 	pass
 
