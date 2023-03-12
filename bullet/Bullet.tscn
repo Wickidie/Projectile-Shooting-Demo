@@ -11,8 +11,6 @@ height = 3.99999
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("2")
 
-[node name="Bullet" type="RigidBody2D" parent="." groups=["bullet"]]
-
 [node name="BulletSprite" type="Sprite2D" parent="."]
 texture = ExtResource("1")
 
@@ -29,6 +27,4 @@ autostart = true
 stream = ExtResource("3")
 volume_db = -8.739
 
-[connection signal="body_entered" from="Bullet" to="Bullet" method="_on_Bullet_body_entered"]
-[connection signal="body_shape_entered" from="Bullet" to="Bullet" method="_on_Bullet_body_shape_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
