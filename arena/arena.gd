@@ -1,9 +1,10 @@
-extends Control
+extends NinePatchRect
 
 @export var enemy_scene: PackedScene
 
 func _ready():
 	randomize()
+	Global.arena_node = self
 	for i in 10:
 		var slime = enemy_scene.instantiate()
 		add_child(slime)

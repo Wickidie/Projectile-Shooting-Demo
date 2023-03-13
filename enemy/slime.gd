@@ -1,16 +1,16 @@
-extends Node2D
+extends CharacterBody2D
 
 
 func _ready():
-	
+	$SlimeAnimSprite.play("default")
 	pass
 	
 func _physics_process(delta):
 	# look_at(Global.player_pos)
-	$SlimeKine/SlimeRay.target_position = Global.player_pos - position
-	$SlimeKine.set_velocity($SlimeKine/SlimeRay.target_position.normalized() * 20)
-	$SlimeKine.move_and_slide()
-	$SlimeKine.velocity
+	$SlimeRay.target_position = Global.player_pos - self.position
+	self.set_velocity($SlimeRay.target_position.normalized() * 20)
+	self.move_and_slide()
+	self.velocity
 	
 	
 	pass

@@ -1,13 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://bnpitta38flni"]
+[gd_scene load_steps=5 format=3 uid="uid://bnpitta38flni"]
 
 [ext_resource type="PackedScene" uid="uid://c8dsenyov7l5d" path="res://shooter/Shooter.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://bi177vw6ql380" path="res://arena/map_castle.png" id="1_u0qv1"]
 [ext_resource type="Script" path="res://arena/arena.gd" id="2"]
-[ext_resource type="PackedScene" path="res://enemy/Slime.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://cuc6y10urt8g8" path="res://enemy/Slime.tscn" id="3"]
 
-[node name="BgColor" type="ColorRect"]
-offset_right = 511.0
-offset_bottom = 300.0
-color = Color(0, 0, 0, 1)
+[node name="Arena" type="NinePatchRect"]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_u0qv1")
 script = ExtResource("2")
 enemy_scene = ExtResource("3")
 

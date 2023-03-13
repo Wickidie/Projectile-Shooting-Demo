@@ -1,33 +1,35 @@
-[gd_scene load_steps=4 format=3 uid="uid://icqhabgpsu6y"]
+[gd_scene load_steps=6 format=3 uid="uid://icqhabgpsu6y"]
 
 [ext_resource type="Script" path="res://menu/Menu.gd" id="1_63qst"]
 [ext_resource type="Texture2D" uid="uid://curojrdmmapiv" path="res://icon.png" id="1_200ln"]
+[ext_resource type="Texture2D" uid="uid://qlqqcalwwy3a" path="res://menu/main_menu.png" id="1_ky3g5"]
 [ext_resource type="PackedScene" uid="uid://bnpitta38flni" path="res://arena/Arena.tscn" id="2_2oevl"]
+[ext_resource type="Texture2D" uid="uid://b0ffwl17d5ca0" path="res://menu/start_button.png" id="4_i0l4r"]
 
 [node name="MenuBG" type="NinePatchRect"]
 offset_right = 1152.0
 offset_bottom = 648.0
 size_flags_horizontal = 4
+texture = ExtResource("1_ky3g5")
 script = ExtResource("1_63qst")
 arena_scene = ExtResource("2_2oevl")
 
 [node name="ButtonContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -32.0
-offset_top = -100.0
-offset_right = 32.0
-offset_bottom = 100.0
+anchor_bottom = 1.0
+offset_left = -80.0
+offset_top = -296.0
+offset_right = 80.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 
 [node name="PlayButton" type="TextureButton" parent="ButtonContainer"]
 layout_mode = 2
-texture_normal = ExtResource("1_200ln")
+texture_normal = ExtResource("4_i0l4r")
 
 [node name="OptionButton" type="TextureButton" parent="ButtonContainer"]
 layout_mode = 2

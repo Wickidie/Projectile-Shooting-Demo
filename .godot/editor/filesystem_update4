@@ -1,7 +1,11 @@
 res://default_env.tres
 res://menu/Menu.tscn
+res://menu/Menu.gd
 res://arena/Arena.tscn
 res://shooter/Shooter.tscn
 res://bullet/Bullet.tscn
-res://menu/Menu.gd
+res://arena/arena.gd
+res://enemy/Slime.tscn
 res://enemy/slime.gd
+res://shooter/shooter.gd
+res://global/global_variable.gd
